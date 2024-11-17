@@ -1,0 +1,18 @@
+//NODEJS provides a runtime environment to run js code
+//it has a javascript engine that can execute a js code and also has objcets that can provide environment to the js code
+an object is document object in the line => document.getelementbyId('')
+
+//architecture =>
+    Non blocking / asynchronous ---> e.g. the CPU can switch between processes when it has to wait some some work to perform
+    in Node --> a single thread is sued to handle multiple request 
+    (Has benefit before the different architecture as it can serve more number of requests)
+    cant use Node for CPU intensive apps -> only used ofr data intensive applications 
+
+    bloacking / synchronous ---> only move to another process after one is completed
+    ac.net / rails --> a different thread is given for each request 
+
+modules in node
+os
+fs
+events
+http

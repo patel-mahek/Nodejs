@@ -1,0 +1,41 @@
+---------------------------INTRO---------------------------------
+user send http request meaaege and the server send sthe http response messege
+server will egenrate the data and willr epsond the request - server is just a computer whose job is to make the resource always available 
+server =>epress/node
+
+cloud is bunch of these servers connected together
+
+request always has some (method the url and the http version) ->strat line
+there are source ocde each depicting differnt state of the respons emessege like if its 200 its good and the excution is porper 
+if we are getting something like 400 then ther eis error
+if we get 401 unauthorised request
+
+key value pairs -> headers
+
+whenever we search in the browser to get something guve a get request 
+
+express is build on top of node and http module
+
+
+---------------------------------http basics------------------------------ 
+const http = require('http')
+this is used because we will need a http module hwich will be always available to us
+
+createserver(req,res)
+is a function which is sued to create a servers
+req->request object
+res->resonse object 
+
+ports are just communication end points 
+here we just see our respective port fro a respective problem 
+eg(when we are callign customer servive we are made to dail a number according to the type of porblem we have)
+port for http traffic is 8
+dont use port number form 1-1024
+as these are take 
+you can take number sbeyond hat for oyur local developemnt
+when we deploy it
+
+res.end() a method to give a messge at the end of res
+
+our wirtehead has the staus number, the type of content and according to the type all the informaiton in the write commands will be displayed
+
